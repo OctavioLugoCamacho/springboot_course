@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Listado de Ofertas de Trabajo</title>
+</head>
+<body>
+
+	<h1>Form de categorías</h1>
+	
+	<form th:action="@{/categorias/save}" method="post">
+	  <label for="fname">Nombre:</label><br>
+	  <input type="text" name="nombre" value=""><br>
+	  <label for="lname">Descripción:</label><br>
+	  <input type="text" name="descripcion" value=""><br><br>
+	  <input type="submit" value="Submit">
+	</form>
+	
+</body>
+</html>
